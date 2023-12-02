@@ -1,0 +1,23 @@
+import CAD
+
+
+document = partDocument()
+
+document.add_axes()
+
+document.add_view(view_vector, view_position)
+
+new_plane = tools.plane_coordinate_normal((x, y, z), normal)
+
+document += plane
+
+# every item added must depend on previous items if possible
+# each item should track it's parents/children
+# each item should have an update method
+
+print(document) >>>> [axes, plane]
+print(document.pointer) >>>> plane
+
+
+
+
