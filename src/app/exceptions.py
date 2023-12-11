@@ -11,3 +11,4 @@ class FileLoadError(CADException):
 
 class NoAxesException(CADException):
     # raise if an item needs
+    pass

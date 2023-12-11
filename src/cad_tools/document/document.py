@@ -13,4 +13,8 @@ import logging
 
 class Document():
     def __init__(self, ):
-        pass
+        self.items = []
+        self.dependencies = {}
+
+    def add_item(self, item, dependencies):
+        self.items.append(item)
