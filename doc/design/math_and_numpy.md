@@ -1,5 +1,7 @@
 creating wrappers for 2D and 3D geometry that use numpy
 
+2D and 3D are just separate since they are used in separate context reducing complexity
+
 default type for floats will by np.float64: high precision,
 favour not to make it configurable because no macros in python
 
