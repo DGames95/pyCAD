@@ -19,3 +19,5 @@ a line will have 2 points which should be accessible from the sketch tree for so
 so if I add a line to the sketch tree a subtree will be made of it's components
 
 what comes to mind is all objects will have a method that decomposes it into the composed objects
+
+decided that there will only be one level of dependencies
