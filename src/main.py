@@ -1,7 +1,7 @@
 import logging
 import os
 
-from base import document
+from .config import CADConfig
 
 
 def setup_logging(log_folder, log_level, console_logging):
@@ -32,14 +32,12 @@ def setup_logging(log_folder, log_level, console_logging):
 
 if __name__ == "__main__":
     # Configure logging
-    log_folder = "logs"  # Set master logging folder here
-    log_level = logging.DEBUG  # (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    log_folder = CADConfig.log_directory  # Set master logging folder here
+    log_level = CADConfig.log_level  # (DEBUG, INFO, WARNING, ERROR, CRITICAL)
     console_logging = True  # True to enable console logging, False to disable
 
     if log_folder or console_logging:
         setup_logging(log_folder, log_level, console_logging)
-
-    test = document.LogTest()
 
     logging.debug("test_log")
     

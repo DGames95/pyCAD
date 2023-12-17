@@ -1,7 +1,19 @@
 just use python logging module
 
+### who logs stuff
+SketchObject logs messages related to sketch solving, sketch object adition, etc.
+
+Basically all 3D objects will log errors
+
+## Interactive mode:
+basically, I want a globa mode whereby if active, certain errors and warnings will not be silently
+handled and logged, they will pop up, and ask for user input on how to handle it
+
+## setup
 
 setup function in main.py for now
+
+should follow root logger level.
 
 to add log for a class:
 
