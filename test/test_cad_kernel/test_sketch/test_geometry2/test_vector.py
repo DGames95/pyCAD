@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from src.cad_kernel.sketch.geometry2.vector import Vector2D
+from pyCAD.cad_kernel.sketch.geometry2.vector import Vector2D
 
 
 class TestVector2D(unittest.TestCase):

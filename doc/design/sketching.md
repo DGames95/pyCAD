@@ -1,3 +1,17 @@
+### document relation
+
+every sketch will have a sketch document in the app regardless of whether it is created in the part bench or on it's own
+
+## managing edits to the sketch (indicate unsolved)
+we need a way to tell if a  sketch has been edited. if we add or remove objects, we just set that in the method.
+however, if we edit an object that is part of the sketch, then we need to also do that. I do not want objects to notify
+their sketch, becasue data and edits should only flow down 
+
+so, use the sketch.edit methods
+
+sketch state machine
+
+
 ## how to manage constraints
 
 I want the sketcher to work without contraints and have a constraint solver directly manipulate the sketch

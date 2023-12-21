@@ -1,0 +1,7 @@
+examples/
+venv/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.pylintrc
+mypi.ini

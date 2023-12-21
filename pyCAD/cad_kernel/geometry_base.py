@@ -1,5 +1,5 @@
 """
-create base classes for 2D and 3D geometry to make sure each implements all necessary methods
+create base classes that both 2D and 3D geometry inherit from to make sure each implements all necessary methods
 
 """
 

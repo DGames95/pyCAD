@@ -1,8 +1,8 @@
 import unittest
-from src.cad_tools.sketch.sketch_solver.sketch_utils import DependencyGraph
-from src.cad_tools.sketch.sketch_exceptions import SketchGeometryError
-from src.cad_tools.sketch.geometry2.base import GeomObject2DTestStub
-from src.cad_tools.sketch.geometry2.point import Point2D
+from pyCAD.cad_kernel.sketch.sketch_solver.sketch_utils import DependencyGraph
+from pyCAD.cad_kernel.sketch.sketch_exceptions import SketchGeometryError
+from pyCAD.cad_kernel.sketch.geometry2.base import GeomObject2DTestStub
+from pyCAD.cad_kernel.sketch.geometry2.point import Point2D
 
 
 class TestDependencyGraph(unittest.TestCase):

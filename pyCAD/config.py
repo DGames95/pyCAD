@@ -5,7 +5,9 @@ Define all settings in the init method of the CADConfig class.
 
 
 """
+import logging
 from dataclasses import dataclass
+
 
 class SingletonMeta(type):
     _instances = {}
@@ -21,4 +23,5 @@ class CADConfig(metaclass=SingletonMeta):
     # default settings
     UNITS = "mm"  # Default units for measurements (e.g., "mm", "inch")
     interactive = False  # Enable or disable pop-up warnings
-    log_level = "INFO"
+    log_level = logging.INFO
+    console_logging = True  # print logs to console

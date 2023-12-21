@@ -1,6 +1,6 @@
 import unittest
-from CAD_python.src.cad_tools.sketch.sketch_solver import sketch_object
-from src.cad_tools.sketch.geometry2.point import Point2D
+from CAD_python.src.cad_kernel.sketch.sketch_solver import sketch_object
+from pyCAD.cad_kernel.sketch.geometry2.point import Point2D
 
 
 class TestSketchTree(unittest.TestCase):

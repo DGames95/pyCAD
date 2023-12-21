@@ -4,7 +4,13 @@ from abc import ABC, abstractmethod
 from typing import Iterable
 
 
+
 class GeomObject2D(ABC):
+
+    @abstractmethod
+    @property
+    def hidden(self) -> bool:
+        ...
 
     @abstractmethod
     def dependencies(self) -> Iterable[GeomObject2D] | None:
@@ -17,6 +23,11 @@ class GeomObject2D(ABC):
 
     @abstractmethod
     def translate(self, dx, dy):
+        for dep in self.dependencies():
+            dep.translate(dx, dy)
+
+    @abstractmethod
+    def rotate(self, angle, center_point):  # point should default to origin but not added here to avoid circular import
         ...
 
 

@@ -8,3 +8,6 @@ class SketchConstraintError(SketchException):
 
 class SketchGeometryError(SketchException):
     pass
+
+class SketchSolverError(SketchException):
+    pass

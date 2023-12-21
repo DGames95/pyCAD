@@ -1,0 +1,23 @@
+# inspired by freeCAD: https://wiki.freecad.org/Sketcher_scripting
+
+from pyCAD import App
+
+# I want to be able to create either a sketch and then load that into the sketchobject class
+# or create a sketch from a 3D project
+
+doc = App.new_sketch()
+
+doc.addObject()
+
+doc.recompute()
+
+box.
+
+
+####### KERNEL #############
+
+# keep app and kernel decoupled
+
+
+
+

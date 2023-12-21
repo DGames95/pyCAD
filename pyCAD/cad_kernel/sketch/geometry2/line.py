@@ -16,10 +16,8 @@ class Line2D(GeomObject2D):
 
     def translate(self, dx, dy):
         # Move the line by adjusting the positions of its points
-        self.start_point.x += dx
-        self.start_point.y += dy
-        self.end_point.x += dx
-        self.end_point.y += dy
+        self.start_point.translate(dx, dy)
+        self.end_point.translate(dx, dy)
 
     def dependencies(self) -> Iterable[GeomObject2D]:
         return [self.start_point, self.end_point]
@@ -29,6 +27,6 @@ def Line2DVectorFactory(start_point: Point2D, vector: Vector2D, magnitude: np.fl
     """
     create a Line2D object with 
     """
-    end_point = start_point
+    end_point = start_point + vector * magnitude
 
     pass
