@@ -33,3 +33,11 @@ Use:
     logger.debug("Processed data: %s", data)
 
 This way, the string concatenation and conversion only occur if the message is actually going to be logged.
+
+
+### Disable dependency debug logs e.g. Matplotlib
+
+Set matplotlib's logger to warning level (this will show warnings and errors, but not info or debug messages)
+
+    matplotlib_logger = logging.getLogger('matplotlib')
+    matplotlib_logger.setLevel(logging.WARNING)
